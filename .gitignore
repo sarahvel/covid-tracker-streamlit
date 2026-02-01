@@ -1,0 +1,10 @@
+# Cache Python (généré automatiquement à l'exécution)
+__pycache__/
+*.pyc
+
+# Fichiers système (souvent présents sur Mac ou Windows)
+.DS_Store
+Thumbs.db
+
+# Dossier de configuration Streamlit local
+.streamlit/
