@@ -1,5 +1,8 @@
 ## 🦠 Covid Tracker : Dashboard Interactif avec Streamlit
 
+[![Streamlit App lien](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://covid-tracker-analysis.streamlit.app/)
+
+
 ### Contexte
 
 La pandémie de Covid-19 a été marquée par des vagues successives affectant différemment les pays et les périodes de l’année.  
