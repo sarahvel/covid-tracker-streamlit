@@ -33,8 +33,8 @@ Le projet est relié à ce dépôt GitHub. Cette intégration permet un déploie
 #### Méthodologie
 
 **Préparation de l’environnement de travail**
-•	Téléchargement du fichier data.csv contenant les données Covid à analyser
-•	Création du fichier app.py dans le dossier de travail covid_tracker  
+- Téléchargement du fichier data.csv contenant les données Covid à analyser
+- Création du fichier app.py dans le dossier de travail covid_tracker  
 Ce fichier correspond au script Python exécuté par Streamlit lors du lancement de l’application et définit l’interface utilisateur de l’application web.
 
 **Environnement Docker**
@@ -45,12 +45,12 @@ Cette image fournit un environnement prêt à l’emploi comprenant Linux, Pytho
 Elle permet de configurer :
     - un accès interactif au terminal du conteneur
     - un dossier partagé entre l’ordinateur hôte et le conteneur
-    - un port réseau afin d’accéder à l’application via un navigateur web
+    - un port réseau afin d’accéder à l’application via un navigateur web  
 Commande utilisée : docker run -it -v "$(pwd):/home/app" -p 4000:4000 jedha/streamlit-fs-image
 
 **Lancement de l’application web**
 - L’application Streamlit est lancée depuis le conteneur Docker
-- Streamlit démarre un serveur web et exécute le script app.py, générant dynamiquement l’interface utilisateur accessible depuis un navigateur web à l’adresse http://localhost:4000.
+- Streamlit démarre un serveur web et exécute le script app.py, générant dynamiquement l’interface utilisateur accessible depuis un navigateur web à l’adresse http://localhost:4000.  
 Commande utilisée : streamlit run app.py --server.port 4000 --server.address 0.0.0.0
 - Activation de l’option « Run on save » dans les Settings de Streamlit pour le rafraîchissement automatique de l’application
 
