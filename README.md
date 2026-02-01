@@ -1,36 +1,36 @@
 ## 🦠 Covid Tracker : Dashboard Interactif avec Streamlit
 
-#### Contexte
+### Contexte
 
 La pandémie de Covid-19 a été marquée par des vagues successives affectant différemment les pays et les périodes de l’année.  
 Ce projet vise à construire un dashboard interactif permettant de suivre l’évolution des cas de Covid à partir des données publiées par l’European Centre for Disease Prevention and Control (ECDC).
 
-#### Problématique
+### Problématique
 
 Comment analyser et visualiser les vagues de Covid-19 à l’échelle mondiale, et que révèle l’étude du cas français sur la dynamique de l’épidémie ?
 
-#### Objectif du projet
+### Objectif du projet
 
 Créer une application web accessible depuis un navigateur, simple à développer et à utiliser, afin de partager un travail d’analyse des données Covid avec d’autres utilisateurs.
 
-#### Fichiers de données
+### Fichiers de données
 
 Le projet exploite les données officielles de l'UE/EEE fournies par l'ECDC :
 - data.csv : archive regroupant les relevés quotidiens des nouveaux cas sur la période 2020-2022
 - Source : [European Centre for Disease Prevention and Control (ECDC)](https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country)
 
-#### Environnement technique
+### Environnement technique
 
 Le projet s’appuie sur deux outils clés pour faciliter le développement et la diffusion de l’analyse :
 - **Docker** : sert à créer un environnement de travail autonome. Il garantit que le projet s'exécute de la même manière sur n'importe quel ordinateur, évitant ainsi les erreurs liées aux différences de systèmes ou de versions de logiciels.
 - **Streamlit** : permet de convertir le script d'analyse Python en un dashboard web interactif. Cela offre une exploration visuelle des données directement via un navigateur et facilite le partage du projet sans que l'utilisateur n'ait besoin d'installer de logiciels spécifiques.
 
-#### Déploiement et hébergement
+### Déploiement et hébergement
 
 L'application est hébergée sur Streamlit Cloud, ce qui permet d'accéder au dashboard directement via un navigateur web sans aucune installation complexe.  
 Le projet est relié à ce dépôt GitHub. Cette intégration permet un déploiement continu : toute modification apportée au code source est instantanément mise à jour sur l'application en ligne, garantissant ainsi la transparence et la disponibilité des dernières analyses.
 
-#### Méthodologie
+### Méthodologie
 
 **Préparation de l’environnement de travail**
 - Téléchargement du fichier data.csv contenant les données Covid à analyser
@@ -70,7 +70,7 @@ Commande utilisée : streamlit run app.py --server.port 4000 --server.address 0.
 - Liaison de ce répertoire à la plateforme Streamlit Cloud pour rendre l'application accessible sur internet.
 - Cette étape permet de passer d'un travail sur ordinateur local (via Docker) à un dashboard final disponible en ligne via une simple adresse web.
 
-#### Résultats clés
+### Résultats clés
 
 🌍 **Analyse au niveau mondial**
 
@@ -87,7 +87,7 @@ Commande utilisée : streamlit run app.py --server.port 4000 --server.address 0.
 - **Maîtrise de la mortalité**: Un constat analytique majeur réside dans la dissociation entre le nombre de cas et le nombre de décès. Le pic de mortalité le plus élevé (environ 2 000/jour) se situe au printemps 2020, bien avant la vague de cas la plus massive de 2022.
 - **Interprétation** : Ce résultat met en évidence une amélioration progressive de la situation sanitaire. Il s'explique par la protection immunitaire apportée par la campagne de vaccination combinée à la moindre virulence intrinsèque des variants tardifs.
 
-#### Conclusion
+### Conclusion
 
 Ce dashboard permet une lecture claire et interactive de la crise sanitaire sur la période 2020-2022.  
 Si l'analyse mondiale montre une tendance générale, la dynamique de l’épidémie est restée très hétérogène d'un pays à l'autre, ce qui justifie le choix d'un focus spécifique à la France afin d’observer les mécanismes au niveau national.  
